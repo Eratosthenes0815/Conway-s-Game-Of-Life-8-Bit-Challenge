@@ -1,0 +1,15 @@
+{
+  "C_Cpp.default.compilerPath": "~/dev/compiler/vbcc6502/vbcc6502_linux/vbcc/bin/vc",
+  "C_Cpp.default.includePath": [
+    "~/dev/compiler/vbcc6502/vbcc6502_linux/vbcc/targets/6502-c64/include"
+  ],
+  "debug.onTaskErrors": "debugAnyway",
+  "[c]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSave": true
+  },
+  "explorer.confirmDelete": false,
+  "editor.formatOnSave": true,
+  "C_Cpp.formatting": "clangFormat",
+  "C_Cpp.clang_format_style": "file"
+}

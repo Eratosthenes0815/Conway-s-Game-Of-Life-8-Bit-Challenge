@@ -53,3 +53,8 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# C64 stuff
+bin
+bin/
+*.prg

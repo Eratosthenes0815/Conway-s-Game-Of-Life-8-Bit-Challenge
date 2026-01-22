@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build C (vc)",
+      "type": "shell",
+      "command": "vc",
+      "args": [
+        "${file}",
+        "-o",
+        "bin/${fileBasenameNoExtension}.prg"
+      ],
+      "group": {
+        "kind": "build"
+      },
+      "presentation": {
+        "clear": true,
+        "echo": false,
+        "focus": true,
+        "panel": "shared",
+        "reveal": "always",
+        "showReuseMessage": false
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Deploy (Build + Run)",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Build C (vc)"
+      ],
+      "type": "shell",
+      "command": "ls -lah ./bin/${fileBasenameNoExtension}.prg; ls",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": false,
+        "focus": true,
+        "panel": "shared",
+        "reveal": "always",
+        "showReuseMessage": false
+      },
+      "problemMatcher": []
+    }
+  ]
+}
